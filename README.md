@@ -83,8 +83,11 @@ Ao ser concluída a instalação serão mostradas algumas informações. Entre e
 ## Fontes:
 
 `https://mateusmuller.me/posts/2020-04-26-openstack-como-instalar-devstack-com-vagrant-para-homelab/`
+
 `https://www.youtube.com/watch?v=bh2CHlxyIvw&list=PL0zspxm7AK_DsypYjkFVEU7ZxPn5gReKF&index=3`
+
 `https://docs.openstack.org/devstack/latest/`
+
 `https://app.vagrantup.com/ubuntu/boxes/focal64`
 
 
