@@ -19,9 +19,10 @@ Durante a criação será questionado qual interface deve ser utilizada como bri
 
 ![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/interfaces.png)
 
+Após a VM ser criada ela será acessada via SSH usando o comando `vagrant ssh`. Ao fazer o login ssh, seram mostradas algumas informações. Entre elas
+pode-se notar os IPs associados a cada interface. No exemplo asseguir é mostrado estas informações:
 
-e 
-logará na mesma usando o comando `vagrant ssh`.
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/posLoginSSH.png)
 
 Caso seja desejado, pode-se alterar o tamanho de disco, o número de núcleos de processador, quantidade de memória RAM em MB e hostname 
 editando o arquivo `Vagrantfile`. Por padão, o tamanho do disco foi definido como 80 GB, o número de núcleos de processador foi definido como 4,a quantidade de memória RAM foi definida como 10240 MB (10GB) e o hostname foi definido como openstack.
