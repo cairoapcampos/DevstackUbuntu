@@ -80,6 +80,17 @@ Ao ser concluída a instalação serão mostradas algumas informações. Entre e
 
 ![FimInstalacao](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/fimInstalacao.png)
 
+7. Para evitar problemas de funcionamento a máquina deve ser suspensa quando não for mais utilizada:
+
+`vagrant suspend`
+
+Para iniciá-la basta entrar no diretório `devstack` da máquina anfitriã e digitar `vagrant resume`:
+
+```
+cd /home/usuario/devstack/
+vagrant resume
+```
+
 
 ## Fontes:
 
