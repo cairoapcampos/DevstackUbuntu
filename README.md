@@ -17,7 +17,7 @@ o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, 
 
 Durante a criação será questionado qual interface deve ser utilizada como bridge. Para evitar problemas durante a instalação deve-se utilizar uma interface ethernet. No exemplo a seguir a interface `enp2s0` é escolhida.
 
-![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/raw/master/interfaces.png)
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/tree/main/imgs/interfaces.png)
 
 
 e 
