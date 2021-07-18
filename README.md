@@ -35,5 +35,16 @@ Vagrant.configure("2") do |config|
 end
 ```
 
+3. Após acessar a VM openstack via ssh, deve-se virar root e logar com o usuário stack:
+```
+sudo su
+su - stack
+```
+4. Entrar no diretório devstack e editar o arquivo `local.conf`:
+```
+cd devstack/
+nano local.conf
+```
+No arquivo `local.conf` deve ser alterada a linha `HOST_IP=` e a linha `FLOATING_RANGE=`.
 
 
