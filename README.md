@@ -69,4 +69,8 @@ No arquivo `local.conf` deve ser alterada a linha `HOST_IP=` e a linha `FLOATING
 
 `./stack.sh`
 
+Ao ser concluída a instalação serão mostradas algumas informações. Entre elas é mostrada a url de acesso do dashboard Horizon. No exemplo a seguir ela é `https://192.168.88.39/dashboard`:
+
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/fimInstalacao.png)
+
 
