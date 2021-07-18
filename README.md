@@ -74,3 +74,9 @@ Ao ser concluída a instalação serão mostradas algumas informações. Entre e
 ![FimInstalacao](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/fimInstalacao.png)
 
 
+## Fontes:
+
+`https://mateusmuller.me/posts/2020-04-26-openstack-como-instalar-devstack-com-vagrant-para-homelab/`
+`https://www.youtube.com/watch?v=bh2CHlxyIvw&list=PL0zspxm7AK_DsypYjkFVEU7ZxPn5gReKF&index=3`
+
+
