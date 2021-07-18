@@ -3,29 +3,17 @@ Instala o Devstack em uma VM Ubuntu utilizando Vagrant e VirtualBox
 
 ## Instruções
 
-1.Clonar repositório:
+1. Clonar repositório:
 
 `git clone https://github.com/cairoapcampos/DevstackUbuntu.git`
 
-2.Entrar no diretório e definir permissão de execução para o script `DevstackUbuntu.sh`:
+2. Entrar no diretório e alterar o arquivo `Vagrantfile`:
+
 ```
 cd DevstackUbuntu
-chmod +x DevstackUbuntu.sh
+nano Vagrantfile
 ```
-Este script instalará os pacotes necessários para a criação da VM Ubuntu e criará um diretório na pasta do usuário para a qual copiará 
-o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up`.
-
-Durante a criação será questionado qual interface deve ser utilizada como bridge. Para evitar problemas durante a instalação deve-se utilizar uma interface ethernet. No exemplo a seguir a interface `enp2s0` é escolhida.
-
-![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/interfaces.png)
-
-Após a VM ser criada ela será acessada via SSH usando o comando `vagrant ssh`. Ao fazer o login ssh, seram mostradas algumas informações. Entre elas
-pode-se notar os IPs associados a cada interface. No exemplo asseguir é mostrado estas informações:
-
-![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/posLoginSSH.png)
-
-Caso seja desejado, pode-se alterar o tamanho de disco, o número de núcleos de processador, quantidade de memória RAM em MB e hostname 
-editando o arquivo `Vagrantfile`. Por padão, o tamanho do disco foi definido como 80 GB, o número de núcleos de processador foi definido como 4,a quantidade de memória RAM foi definida como 10240 MB (10GB) e o hostname foi definido como openstack.
+No arquivo pode-se alterar o tamanho de disco, o número de núcleos de processador, quantidade de memória RAM em MB e hostname. Por padão, o tamanho do disco foi definido como 80 GB, o número de núcleos de processador foi definido como 4,a quantidade de memória RAM foi definida como 10240 MB (10GB) e o hostname foi definido como openstack.
 
 Configuração padrão do `Vagrantfile`:
 ```
@@ -43,7 +31,24 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-3. Após acessar a VM openstack via ssh, deve-se virar root e logar com o usuário stack:
+3. Definir permissão de execução para o script `DevstackUbuntu.sh`:
+
+`chmod +x DevstackUbuntu.sh`
+
+Este script instalará os pacotes necessários para a criação da VM Ubuntu e criará um diretório na pasta do usuário para a qual copiará 
+o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up`.
+
+Durante a criação será questionado qual interface deve ser utilizada como bridge. Para evitar problemas durante a instalação deve-se utilizar uma interface ethernet. No exemplo a seguir a interface `enp2s0` é escolhida.
+
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/interfaces.png)
+
+Após a VM ser criada ela será acessada via SSH usando o comando `vagrant ssh`. Ao fazer o login ssh, seram mostradas algumas informações. Entre elas
+pode-se notar os IPs associados a cada interface. No exemplo asseguir é mostrado estas informações:
+
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/posLoginSSH.png)
+
+
+4. Após acessar a VM openstack via ssh, deve-se virar root e logar com o usuário stack:
 ```
 sudo su
 su - stack
