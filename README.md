@@ -16,5 +16,24 @@ Este script instalará os pacotes necessários para a criação da VM Ubuntu e c
 o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up` e 
 logará na mesma usando o comando `vagrant ssh`.
 
+Caso seja desejado, pode-se alterar o tamanho de disco, o número de núcleos de processador, quantidade de memória RAM em MB e hostname 
+editando o arquivo `Vagrantfile`. Por padão, o tamanho do disco foi definido como 80 GB, o número de núcleos de processador foi definido como 4,a quantidade de memória RAM foi definida como 10240 MB (10GB) e o hostname foi definido como openstack.
+
+Configuração padrão do `Vagrantfile`:
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+  config.disksize.size = "80GB"
+  config.vm.hostname = "openstack"
+  config.vm.network "public_network", bridge: "enp8s0"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 10240
+    v.cpus = 4
+    v.name = "openstack"
+  end
+  config.vm.provision "shell", path: "initial-devstack-setup.sh"
+end
+```
+
 
 
