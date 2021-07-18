@@ -80,7 +80,7 @@ Ao ser concluída a instalação serão mostradas algumas informações. Entre e
 
 ![FimInstalacao](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/fimInstalacao.png)
 
-7. Para evitar problemas de funcionamento a máquina deve ser suspensa quando não for mais utilizada:
+7. Para evitar problemas de funcionamento a VM deve ser suspensa quando não for mais utilizada:
 
 `vagrant suspend`
 
