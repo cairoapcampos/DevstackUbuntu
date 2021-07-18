@@ -65,4 +65,8 @@ No arquivo `local.conf` deve ser alterada a linha `HOST_IP=` e a linha `FLOATING
 
 ![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/blob/main/imgs/arquivoConfig.png)
 
+6. Após alterar o arquivo `local.conf` para instalar o Devstack basta executar o script seguinte:
+
+`./stack.sh`
+
 
