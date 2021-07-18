@@ -13,7 +13,14 @@ cd DevstackUbuntu
 chmod +x DevstackUbuntu.sh
 ```
 Este script instalará os pacotes necessários para a criação da VM Ubuntu e criará um diretório na pasta do usuário para a qual copiará 
-o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up` e 
+o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up`.
+
+Durante a criação será questionado qual interface deve ser utilizada como bridge. Para evitar problemas durante a instalação deve-se utilizar uma interface ethernet. No exemplo a seguir a interface `enp2s0` é escolhida.
+
+![Initial Screen](https://github.com/cairoapcampos/DevstackUbuntu/raw/master/interfaces.png)
+
+
+e 
 logará na mesma usando o comando `vagrant ssh`.
 
 Caso seja desejado, pode-se alterar o tamanho de disco, o número de núcleos de processador, quantidade de memória RAM em MB e hostname 
