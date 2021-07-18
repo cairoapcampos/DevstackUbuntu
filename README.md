@@ -12,4 +12,9 @@ Instala o Devstack em uma VM Ubuntu utilizando Vagrant e VirtualBox
 cd DevstackUbuntu
 chmod +x DevstackUbuntu.sh
 ```
+Este script instalará os pacotes necessários para a criação da VM Ubuntu e criará um diretório na pasta do usuário para a qual copiará 
+o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up` e 
+logará na mesma usando o comando `vagrant ssh`.
+
+
 
