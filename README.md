@@ -31,9 +31,11 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-3. Definir permissão de execução para o script `DevstackUbuntu.sh`:
-
-`chmod +x DevstackUbuntu.sh`
+3. Definir permissão de execução para o script `DevstackUbuntu.sh` e executá-lo:
+```
+chmod +x DevstackUbuntu.sh
+./DevstackUbuntu.sh
+```
 
 Este script instalará os pacotes necessários para a criação da VM Ubuntu e criará um diretório na pasta do usuário para a qual copiará 
 o arquivo `Vagrantfile` e o script `initial-devstack-setup.sh`. Posteriormente, após o fim da cópia, criará a VM executando o comando `vagrant up`.
@@ -53,7 +55,7 @@ pode-se notar os IPs associados a cada interface. No exemplo asseguir é mostrad
 sudo su
 su - stack
 ```
-4. Entrar no diretório devstack e editar o arquivo `local.conf`:
+5. Entrar no diretório devstack e editar o arquivo `local.conf`:
 ```
 cd devstack/
 nano local.conf
