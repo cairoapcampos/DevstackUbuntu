@@ -60,6 +60,6 @@ su - stack
 cd devstack/
 nano local.conf
 ```
-No arquivo `local.conf` deve ser alterada a linha `HOST_IP=` e a linha `FLOATING_RANGE=`.
+No arquivo `local.conf` deve ser alterada a linha `HOST_IP=` e a linha `FLOATING_RANGE=`. No exemplo a seguir é definido o IP 192.168.88.39 da inerface `enp0s8` para `HOST_IP` e o range 192.168.88.224/27 para `FLOATING_RANGE`.
 
 
