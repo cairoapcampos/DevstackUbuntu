@@ -10,8 +10,7 @@
 findVirtualbox=$(which virtualbox | wc -l)
 findVagrant=$(which vagrant | wc -l)
 findVagrantPlugin=$(vagrant plugin list | grep vagrant-disksize | wc -l)
-dirVagrant=devstack-new
-initLocal=$(pwd)
+dirVagrant=devstack
 
 
     if [ $findVirtualbox -eq 0 ]
