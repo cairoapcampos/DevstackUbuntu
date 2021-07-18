@@ -1,6 +1,12 @@
 # DevstackUbuntu
 Instala o Devstack em uma VM Ubuntu utilizando Vagrant e VirtualBox
 
+
+## Ambiente de Teste:
+
+Sistema Operacional do anfitrião: GNU/Linux Xubuntu 20.04
+Sistema Operacional do hospedeiro: GNU/Linux Ubuntu 20.04 (Formato Vagrant Cloud)
+
 ## Instruções
 
 1. Clonar repositório:
@@ -78,5 +84,7 @@ Ao ser concluída a instalação serão mostradas algumas informações. Entre e
 
 `https://mateusmuller.me/posts/2020-04-26-openstack-como-instalar-devstack-com-vagrant-para-homelab/`
 `https://www.youtube.com/watch?v=bh2CHlxyIvw&list=PL0zspxm7AK_DsypYjkFVEU7ZxPn5gReKF&index=3`
+`https://docs.openstack.org/devstack/latest/`
+`https://app.vagrantup.com/ubuntu/boxes/focal64`
 
 
